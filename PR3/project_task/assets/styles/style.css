@@ -1,0 +1,58 @@
+/* Глобальні стилі */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif; /* використовуємо для встановлення шрифту на всій сторінці */
+}
+
+img {
+	display: block; /* забезпечуємо правильне відображення зображень (без додаткових пробілів) */
+	width: 100%;
+}
+
+.page-wrapper {
+	max-width: 860px; /* встановлюємо максимальну ширину контейнера */
+	width: 100%; /* робить контейнер адаптивним */
+	margin: 0 auto; /* центруємо контейнер */
+	padding: 30px 10px 20px; /* встановлює внутрішні відступи */
+	background-color: #008499;
+}
+
+.content-wrap {
+	padding: 0 20px 20px;
+	background-color: #fff;
+}
+
+header {
+	height: 138px;
+	background-image: url("../images/header-bg.png"); /* додаємо фонове зображення */
+	background-repeat: no-repeat; /* для того щоб відбувалось повторення фонового зображення */
+	background-size: contain; /* масштабуємо фон під розмір блоку */
+	background-position: center; /* центруємо фонове зображення */
+}
+
+main {
+	padding: 20px 30px; /* додаємо внутрішній відступ для основного контенту */
+	font-weight: 500;
+	font-size: 1.2rem; /* встановлюємо розмір шрифту */
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap; /* додаємо перенесення елементів на новий рядок */
+	justify-content: space-between;
+}
+
+.services-list-item {
+	width: calc(50% - 10px); /* довстановлюємо ширину картки для двох рядків */
+	margin-bottom: 20px;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+}
+/*Завдання виконано на середній рівень (7-9) балів */
