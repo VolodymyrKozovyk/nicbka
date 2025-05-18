@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мої замовлення моніторів</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #eaf6ff, #f5faff);
+      padding: 30px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .order-list, .section-title {
+      margin-top: 30px;
+    }
+    .order-list {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .order-item {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+    .order-item:last-child {
+      border-bottom: none;
+    }
+    .order-item img {
+      width: 90px;
+      margin-right: 20px;
+    }
+    .order-info {
+      flex-grow: 1;
+    }
+    .order-price {
+      font-weight: bold;
+      color: #d62828;
+    }
+    .section-title {
+      font-size: 1.4em;
+      background: #0077b6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #1d3557;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #0077b6;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Мої замовлення моніторів</h1>
+  </div>
+
+  <div class="order-list">
+    <h2>Активні замовлення</h2>
+
+    <div class="order-item">
+      <img src="https://content2.rozetka.com.ua/goods/images/big/456225243.jpg" alt="Samsung S32C">
+      <div class="order-info">
+        <h3>Samsung S32C</h3>
+        <p>Статус: В обробці</p>
+        <p class="order-price">7 999 грн</p>
+      </div>
+    </div>
+
+    <div class="order-item">
+      <img src="https://content.rozetka.com.ua/goods/images/big/523926972.jpg" alt="LG UltraGear 27GQ50F">
+      <div class="order-info">
+        <h3>LG UltraGear 27GQ50F</h3>
+        <p>Статус: Відправлено</p>
+        <p class="order-price">6 499 грн</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">РЕКОМЕНДОВАНІ</div>
+  <div class="products">
+    <div class="product">
+      <h3>Dell S2721HN</h3>
+      <img src="https://content1.rozetka.com.ua/goods/images/big/439127874.jpg" alt="Dell S2721HN">
+      <div class="price">5 999 грн</div>
+      <a href="#" class="btn">Детальніше</a>
+    </div>
+
+    <div class="product">
+      <h3>Acer Nitro VG270</h3>
+      <img src="https://content.rozetka.com.ua/goods/images/big/519550501.jpg" alt="Acer Nitro VG270">
+      <div class="price">6 299 грн</div>
+      <a href="#" class="btn">Детальніше</a>
+    </div>
+  </div>
+</body>
+</html>
