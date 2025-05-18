@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блокова верстка без flex/grid</title>
+    <style>
+        /* Скидання стилів */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        /* Центрування контейнера */
+        body:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        
+        .centering-container {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 1200px;
+            width: 90%;
+            text-align: left;
+        }
+        
+        /* Стилі для блоків */
+        #fullwrap {
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        #header {
+            height: 100px;
+            background-color: #4a8bc9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #3a7bb9;
+        }
+        
+        #wrap {
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        #content {
+            width: 75%;
+            float: left;
+            padding: 20px;
+            background-color: #f9f9f9;
+            min-height: 400px;
+        }
+        
+        #sidebar {
+            width: 25%;
+            float: right;
+            padding: 20px;
+            background-color: #e0e0e0;
+            min-height: 400px;
+            border-left: 1px solid #d0d0d0;
+        }
+        
+        #footer {
+            clear: both;
+            height: 80px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #222;
+        }
+        
+        /* Медіа-запити для адаптивності */
+        @media (max-width: 768px) {
+            #content, #sidebar {
+                width: 100%;
+                float: none;
+            }
+            
+            #sidebar {
+                border-left: none;
+                border-top: 1px solid #d0d0d0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="centering-container">
+        <div id="fullwrap">
+            <div id="header">
+                <h1>Заголовок сайту</h1>
+            </div>
+            
+            <div id="wrap">
+                <div id="content">
+                    <h2>Основний вміст</h2>
+                    <p>Тут розміщується основний вміст сторінки. Цей блок займає 75% ширини контейнера.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+                </div>
+                
+                <div id="sidebar">
+                    <h3>Бічна панель</h3>
+                    <p>Цей блок займає 25% ширини контейнера і розміщений справа.</p>
+                    <ul>
+                        <li>Пункт меню 1</li>
+                        <li>Пункт меню 2</li>
+                        <li>Пункт меню 3</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="footer">
+                <p>Футер сайту &copy; 2025</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
