@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця доходів компаній</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4a8bc9;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e6f2ff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Верстка таблиці за допомогою &lt;table&gt;</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th>Q4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Microsoft</td>
+                <td>20.3</td>
+                <td>30.5</td>
+                <td>23.5</td>
+                <td>40.3</td>
+            </tr>
+            <tr>
+                <td>Google</td>
+                <td>50.2</td>
+                <td>40.63</td>
+                <td>45.23</td>
+                <td>39.3</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>25.4</td>
+                <td>30.2</td>
+                <td>33.3</td>
+                <td>36.7</td>
+            </tr>
+            <tr>
+                <td>IBM</td>
+                <td>20.4</td>
+                <td>15.6</td>
+                <td>22.3</td>
+                <td>29.3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

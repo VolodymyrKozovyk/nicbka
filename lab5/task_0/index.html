@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарифна картка</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .pricing-card {
+            width: 200px;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .plan-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .option {
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .option:first-of-type {
+            border-top: none;
+        }
+
+        .purchase-btn {
+            background-color: transparent;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            padding: 8px 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .purchase-btn:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-card {
+                width: 90%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-card">
+        <div class="plan-title">Basic</div>
+        <div class="price">$99</div>
+        <div class="option">Option</div>
+        <div class="option">Option</div>
+        <div class="option">Option</div>
+        <div class="option">Option</div>
+        <div class="option">Option</div>
+        <button class="purchase-btn">Purchase</button>
+    </div>
+</body>
+</html>
