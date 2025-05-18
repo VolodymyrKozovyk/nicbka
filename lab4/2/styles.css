@@ -1,0 +1,10 @@
+.links a {
+    color: #FFFEDE;
+    display: inline-block;
+    border-right: 1px solid #B62025;
+    padding: 5px 10px;
+}
+
+.links a:last-child {
+    border-right: none;
+}

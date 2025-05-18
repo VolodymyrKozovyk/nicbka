@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        .title-container {
+            display: flex;
+            align-items: center;
+            margin: 2px auto;
+        }
+
+        .title-container::before,
+        .title-container::after {
+            content: "";
+            flex-grow: 1;
+            height: 2px;
+            background-color: black;
+            margin: 0 10px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title-container">
+    <span class="title">TITLE</span>
+</div>
+
+</body>
+</html>
